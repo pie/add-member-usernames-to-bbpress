@@ -5,9 +5,15 @@ Description: Add @user_nicename where it is missing from forum posts within BBPr
 Version:     0.1
 Author:      The team at PIE
 Author URI:  http://pie.co.de
-License:     GPL2
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License:     GPL3
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 */
+
+/* WooCommerce/Stripe Add New Card as Default is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 2 of the License, or any later version.
+
+WooCommerce/Stripe Add New Card as Default is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with WooCommerce/Stripe Add New Card as Default. If not, see https://www.gnu.org/licenses/gpl-3.0.en.html */
 
 namespace PIE\AddMemberUsernamesToBBPress;
 
