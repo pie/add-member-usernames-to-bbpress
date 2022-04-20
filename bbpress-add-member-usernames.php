@@ -31,4 +31,4 @@ function add_username_to_forum_posts( $author_role, $r ) {
     }
     return $author_role;
 }
-add_filter( 'bbp_get_reply_author_role', __NAMESPACE__ . '\\add_username_to_forum_posts', 10, 2 );
+add_filter( 'bbp_get_reply_author_role', __NAMESPACE__ . '\add_username_to_forum_posts', 10, 2 );
