@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: bbPress: Add Member Usernames
-Description: Add @user_nicename where it is missing from forum posts within bbPress
+Description: Append @user_nicename to the author name on forum posts
 Version:     0.1
 Author:      The team at PIE
 Author URI:  http://pie.co.de
@@ -20,11 +20,20 @@ namespace PIE\BBPressAddMemberUsernames;
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
+
 /**
- * Adjust HTML for author role on forum posts to add in the user's @ name
+ * Add the user's @name to the author role on forum posts
+ *
+ * @param string $author_role HTML markup for the author role
+ * @param array $r
+ * 
+ * @return string $author_role
  */
 function add_username_to_forum_posts( $author_role, $r ) {
-    $user_id = bbp_get_reply_author_id( bbp_get_reply_id( $r['reply_id'] ) );
+    if ( ! function_exists( 'bbp_get_reply_author_id' ) || ! function_exists( 'bbp_get_reply_id' ) ) {
+        return $author_role;
+    }
+    $user_id = \bbp_get_reply_author_id( \bbp_get_reply_id( $r['reply_id'] ) );
     if ( $user_id ) {
         $user        = get_user_by( 'id', $user_id );
         $author_role = '<span class="user-nicename">@' . $user->user_nicename . '</span>' . $author_role;
