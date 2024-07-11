@@ -36,7 +36,7 @@ function add_username_to_forum_posts( $author_role, $r ) {
     $user_id = \bbp_get_reply_author_id( \bbp_get_reply_id( $r['reply_id'] ) );
     if ( $user_id ) {
         $user        = get_user_by( 'id', $user_id );
-        $author_role = '<span class="user-nicename">@' . $user->user_nicename . '</span>' . $author_role;
+        $author_role = '<span class="user-nicename">@' . esc_html( $user->user_nicename ) . '</span>' . $author_role;
     }
     return $author_role;
 }
