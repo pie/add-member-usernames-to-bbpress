@@ -1,0 +1,60 @@
+Running php-build composer
+WARNING! Your password will be stored unencrypted in /home/runner/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+Pulling docker.pkg.github.com/pie/bbpress-add-member-usernames/php-actions_composer_bbpress-add-member-usernames:php-latest-build2.1.0
+php-latest-build2.1.0: Pulling from pie/bbpress-add-member-usernames/php-actions_composer_bbpress-add-member-usernames
+ec99f8b99825: Already exists
+69ed43a81650: Pulling fs layer
+82333a17c7c2: Pulling fs layer
+c6bc217d680f: Pulling fs layer
+aa02953e76de: Pulling fs layer
+12990c45fb38: Pulling fs layer
+f3677729ee35: Pulling fs layer
+2f5a2a848ead: Pulling fs layer
+f97e6dcc609e: Pulling fs layer
+0fa19e935c86: Pulling fs layer
+aa02953e76de: Waiting
+12990c45fb38: Waiting
+f3677729ee35: Waiting
+2f5a2a848ead: Waiting
+f97e6dcc609e: Waiting
+0fa19e935c86: Waiting
+82333a17c7c2: Verifying Checksum
+82333a17c7c2: Download complete
+c6bc217d680f: Verifying Checksum
+c6bc217d680f: Download complete
+69ed43a81650: Download complete
+69ed43a81650: Pull complete
+82333a17c7c2: Pull complete
+c6bc217d680f: Pull complete
+aa02953e76de: Verifying Checksum
+aa02953e76de: Download complete
+12990c45fb38: Verifying Checksum
+12990c45fb38: Download complete
+f3677729ee35: Verifying Checksum
+f3677729ee35: Download complete
+aa02953e76de: Pull complete
+12990c45fb38: Pull complete
+f97e6dcc609e: Verifying Checksum
+f97e6dcc609e: Download complete
+2f5a2a848ead: Verifying Checksum
+2f5a2a848ead: Download complete
+0fa19e935c86: Verifying Checksum
+0fa19e935c86: Download complete
+f3677729ee35: Pull complete
+2f5a2a848ead: Pull complete
+f97e6dcc609e: Pull complete
+0fa19e935c86: Pull complete
+Digest: sha256:4023dd3e02d6146fdc7f48bf8c52fc88a15f928dc4c604ec32a5654d047fe86b
+Status: Downloaded newer image for docker.pkg.github.com/pie/bbpress-add-member-usernames/php-actions_composer_bbpress-add-member-usernames:php-latest-build2.1.0
+docker.pkg.github.com/pie/bbpress-add-member-usernames/php-actions_composer_bbpress-add-member-usernames:php-latest-build2.1.0
+Docker tag: docker.pkg.github.com/pie/bbpress-add-member-usernames/php-actions_composer_bbpress-add-member-usernames:php-latest-build2.1.0
+No private keys supplied
+Command: composer install --no-dev --no-progress --no-interaction
+Skipping env variable PWD
+Skipping env variable HOME
+Skipping env variable SHLVL
+Skipping env variable PATH
