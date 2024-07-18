@@ -22,6 +22,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
+ * Load Composer autoloader
+ */
+require_once plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
+
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$update_checker = PucFactory::buildUpdateChecker(
+    'https://pie.github.io/bbpress-add-member-usernames/update.json',
+    __FILE__,
+    'bbpress-add-member-usernames'
+);
+
+/**
  * Add the user's @name to the author role on forum posts
  *
  * @param string $author_role HTML markup for the author role

@@ -1,5 +1,4 @@
 composer.lock
-vendor
 DOCKER_ENV
 docker_tag
 output.log
