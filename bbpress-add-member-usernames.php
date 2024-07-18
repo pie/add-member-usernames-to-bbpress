@@ -25,15 +25,15 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Add the user's @name to the author role on forum posts
  *
  * @param string $author_role HTML markup for the author role
- * @param array $r
+ * @param array $args array of arguments for display
  * 
  * @return string $author_role
  */
-function add_username_to_forum_posts( $author_role, $r ) {
+function add_username_to_forum_posts( $author_role, $args ) {
     if ( ! function_exists( 'bbp_get_reply_author_id' ) || ! function_exists( 'bbp_get_reply_id' ) ) {
         return $author_role;
     }
-    $user_id = \bbp_get_reply_author_id( \bbp_get_reply_id( $r['reply_id'] ) );
+    $user_id = \bbp_get_reply_author_id( \bbp_get_reply_id( $args['reply_id'] ) );
     if ( $user_id ) {
         $user        = get_user_by( 'id', $user_id );
         $author_role = '<span class="user-nicename">@' . esc_html( $user->user_nicename ) . '</span>' . $author_role;

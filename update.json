@@ -1,0 +1,8 @@
+{
+    "name": "bbPress: Add Member Usernames",
+    "version": "0.1.0",
+    "download_url": "https://github.com/pie/bbpress-add-member-usernames/releases/download/0.1.0/bbpress-add-member-usernames.zip",
+    "sections": {
+        "description" : "This is a very small plugin to extend the BBPress plugin and add the users @name (user_nicename) to the author name output on forum posts"
+    }
+}
