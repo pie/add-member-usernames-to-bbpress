@@ -1,0 +1,15 @@
+{
+    "name": "pie/bbpress-add-member-usernames",
+    "description": "This is a very small plugin to extend the BBPress plugin and add the users @name (user_nicename) to the author name output on forum posts",
+    "type": "wordpress-plugin",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "The team at PIE",
+            "email": "dev@pie.co.de"
+        }
+    ],
+    "require": {
+        "yahnis-elsts/plugin-update-checker": "^5.1"
+    }
+}
