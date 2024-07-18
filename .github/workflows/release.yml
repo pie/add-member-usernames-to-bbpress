@@ -1,0 +1,8 @@
+on: 
+    push:
+      branches:
+        - main
+jobs:
+  publish_release:
+    name: Publish release of the plugin
+    uses: pie/.github/.github/workflows/release.yaml@main
