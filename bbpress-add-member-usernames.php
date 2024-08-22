@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: bbPress: Add Member Usernames
+Plugin Name: bbPress/BuddyBoss: Add Member Usernames
 Description: Append @user_nicename to the author name on forum posts
-Version:     1.0.3
-Author:      The team at PIE
-Author URI:  http://pie.co.de
-License:     GPL3
+Version: 1.0.3
+Author: The team at PIE
+Author URI: http://pie.co.de
+License: GPL3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 */
 
