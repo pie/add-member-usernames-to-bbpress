@@ -2,7 +2,7 @@
 /*
 Plugin Name: bbPress/BuddyBoss: Add Member Usernames
 Description: Append @user_nicename to the author name on forum posts
-Version: 1.0.3
+Version: 1.0.4
 Author: The team at PIE
 Author URI: http://pie.co.de
 License: GPL3
